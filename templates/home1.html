@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+        <title>Home</title>
+    {% endblock %}
+
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+</head>
+<body>
+    <h1>hai i am parent</h1>
+    <h1>hope you are doing well</h1>
+
+    <center>
+        <h1 class="btn btn-success">Welcome MDBS</h1>
+    </center>
+    {% block body_block %}
+    
+    {% endblock %}
+
+    <script src="{% static 'js/mdb.es.min.js' %}"></script>
+</body>
+</html>
